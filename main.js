@@ -116,9 +116,9 @@ import { loadElectrodes } from './scripts/electrodes.js'
  */
 const loadVolume = () => {
   let volume = new X.volume();
-  volume.file = `../data/volumes/T1_RAS.nii`;
-  volume.labelmap.file = `../data/volumes/fsaverage_default_labels.nii`;
-  volume.labelmap.colortable.file = `../data/volumes/colormap_seiztype.txt`;
+  volume.file = `./data/volumes/T1_RAS.nii`;
+  volume.labelmap.file = `./data/volumes/fsaverage_default_labels.nii`;
+  volume.labelmap.colortable.file = `./data/volumes/colormap_seiztype.txt`;
   volume.modified();
   return volume;
 };
@@ -142,8 +142,8 @@ const loadSurfaces = () => {
   const leftHemisphere = new X.mesh();
   const rightHemisphere = new X.mesh();
 
-  leftHemisphere.file = `../data/meshes/lh.pial`;
-  rightHemisphere.file = `../data/meshes/rh.pial`;
+  leftHemisphere.file = `./data/meshes/lh.pial`;
+  rightHemisphere.file = `./data/meshes/rh.pial`;
 
   leftHemisphere.color = [1, 1, 1];
   rightHemisphere.color = [1, 1, 1];
