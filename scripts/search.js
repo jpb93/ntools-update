@@ -19,7 +19,7 @@
     request.open('HEAD', url, false);
     request.send();
     if (request.status !== 404) {
-      window.location.href = `/index.html?mode=${mode}&subject=${subject}`;
+      window.location.href = `../index.html?mode=${mode}&subject=${subject}`;
     }
     else {
       document.getElementById('err').innerText = 'Data not found!';
